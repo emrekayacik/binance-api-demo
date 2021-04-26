@@ -9,7 +9,7 @@ $(document).ready(function(){
     let urlWIN = "https://api.binance.com/api/v3/klines?symbol=WINUSDT&interval=1h&limit=1";
     let urlDOGE = "https://api.binance.com/api/v3/klines?symbol=DOGEUSDT&interval=1h&limit=1";
     let urlBTC = "https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1h&limit=1";
-    let urlSXP = "https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1h&limit=1";
+    let urlSXP = "https://api.binance.com/api/v3/klines?symbol=SXPUSDT&interval=1h&limit=1";
 
     let funcSTMX = () => {
         xhrSTMX.open('GET', urlSTMX,true);
