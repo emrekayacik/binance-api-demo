@@ -1,4 +1,8 @@
 $(document).ready(function(){
+        getData();
+});
+
+let getData =()=>{
     let xhr = new XMLHttpRequest();
     let xhrSTMX = new XMLHttpRequest();
     let xhrWIN = new XMLHttpRequest();
@@ -159,7 +163,6 @@ $(document).ready(function(){
     funcSTMX();
     funcSXP();
     setTimeout(function(){
-        window.location.reload(1);
-     }, 2000);    
-});
-
+        getData();
+     }, 2000);
+};
