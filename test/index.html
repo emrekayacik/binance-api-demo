@@ -1,15 +1,44 @@
-<script src="jquery3.6.0.js"></script>
-<script src="req.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="js/req.js"></script>
 
-<div style="padding: 250px;">
-    <div style="display: inline-flex;">STMX: <div id="priceSTMX"></div></div>
-    <br><br>
-    <div style="display: inline-flex;">WIN: <div id="priceWIN"></div></div>
-    <br><br>
-    <div style="display: inline-flex;">DOGE: <div id="priceDOGE"></div></div>
-    <br><br>
-    <div style="display: inline-flex;">BTC: <div id="priceBTC"></div></div>
-    <br><br>
-    <div style="display: inline-flex;">SXP: <div id="priceSXP"></div></div>
-    <br><br>
-</div>
+    <title>Cryptocurrencies</title>
+</head>
+<body>
+    <div class="container mt-5">
+
+            <select name="intervals" id="intervals">
+                <option value="1m">1 minutes</option>
+                <option value="5m">5 minutes</option>
+                <option value="15m">15 minutes</option>
+                <option value="30m">30 minutes</option>
+                <option value="1h">1 hour</option>
+                <option value="2h">2 hours</option>
+                <option value="4h">4 hours</option>
+                <option value="6h">6 hours</option>
+                <option value="8h">8 hours</option>
+                <option value="12h">12 hours</option>
+            </select>
+            <button onclick="getCurrencies()" class="btn btn-primary btn-sm">Getir</button>
+        <br>
+        <hr>
+        <ul class="crypto-list">
+            <li class="list-item"><p>STMX: &nbsp;<span id="priceSTMX"></span>%</p></li>
+            <li class="list-item"><p>WIN: &nbsp;<span id="priceWIN"></span>%</p></li>
+            <li class="list-item"><p>DOGE: &nbsp;<span id="priceDOGE"></span>%</p></li>
+            <li class="list-item"><p>BTC: &nbsp;<span id="priceBTC"></span>%</p></li>
+        </ul>
+    </div>
+</body>
+
+
+</html>
