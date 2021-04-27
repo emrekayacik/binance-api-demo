@@ -117,4 +117,5 @@ let calculateAverage = (openPrice,closePrice) => ((closePrice-openPrice)/openPri
 getCurrencies = () => {
     let interval = $('#intervals').val();
     getData(interval);
+    $('#btnGetData').hide(500);
 };
